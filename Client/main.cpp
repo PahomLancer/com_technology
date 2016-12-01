@@ -3,7 +3,9 @@
 #include <stdio.h>
 
 #include "Interfaces.h"
-
+#include <stdio.h>
+#include <iostream>
+#include <conio.h>
 //{91A42CAA-2577-4E80-934E-07DE64502FD6}
 const CLSID CLSID_CA = {0x91A42CAA,0x2577,0x4E80,{0x93,0x4E,0x07,0xDE,0x64,0x50,0x2F,0xD6}};
 
@@ -95,7 +97,10 @@ int main()
 
 
      //Work (Begin)
-     pX->Fx1();
+     setlocale(LC_ALL, "Rus");
+     //printf("Введите отрезок для метода Эйлера(a, b):\n");
+     double a = 0, b = 2;
+     pX->Eyler(a, b);
      //Work (End)
 
      //Query (Begin)
@@ -115,22 +120,39 @@ int main()
           //printf("%X\n",(unsigned int)resQuery);
           throw "No query";
      }
+     //Query (Begin)
+     IQ* pQ = NULL;
+     resQuery = pX->QueryInterface(IID_IQ,(void**)&pQ);
+     if (!(SUCCEEDED(resQuery)))
+     {
+          //printf("%X\n",(unsigned int)resQuery);
+          throw "No query";
+     }
 
      //Work (Begin)
-     pY->Fy1();
-     pZ->Fz1();
+     //printf("Введите отрезок для метода Рунге Кута 2 порядка (a, b):\n");
+     double a1 = 0, b1 = 2;
+     pY->RungeCut2(a1, b1);
+     //printf("Введите отрезок для метода Рунге Кута 4 порядка (a, b):\n");
+     double a2 = 0, b2 = 2;
+     pZ->RungeCut4(a2, b2);
+     //printf("Введите отрезок для метода Рунге Кута 4 порядка (a, b):\n");
+     double a3 = 0, b3 = 2;
+     pQ->Milna(a3, b3);
      //Work (End)
 
 
      //Ref (Begin)
+     /*
      IY* pY2 = pY;
      pY2->AddRef();
-     pY2->Fy1();
+     pY2->RungeCut2(a1, b1);
      pY2->Release();
      IZ* pZ2 = pZ;
      pZ2->AddRef();
      pZ2->Fz1();
      pZ2->Release();
+     */
      //Ref (End)
 
 
@@ -138,6 +160,7 @@ int main()
      //Deleting (Begin)
      pY->Release();
      pZ->Release();
+     pQ->Release();
      pX->Release();
      if (var!=3)
      {

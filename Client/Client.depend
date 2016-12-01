@@ -15,3 +15,15 @@
 1479880614 c:\users\mozgg\downloads\2\2\client\interfaces.h
 	<windows.h>
 
+1480598116 source:c:\users\mozgg\desktop\com_technology\client\main.cpp
+	<objbase.h>
+	<stdio.h>
+	"Interfaces.h"
+	<stdio.h>
+	<iostream>
+	<conio.h>
+
+1480598488 c:\users\mozgg\desktop\com_technology\client\interfaces.h
+	<windows.h>
+	<windows.h>
+

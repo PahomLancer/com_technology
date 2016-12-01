@@ -18,3 +18,25 @@
 1479905710 c:\users\mozgg\downloads\2\2\server\main.h
 	<windows.h>
 
+1479905966 source:c:\users\mozgg\desktop\com_technology\server\main.cpp
+	"main.h"
+	<stdio.h>
+	"Components.h"
+
+1479905710 c:\users\mozgg\desktop\com_technology\server\main.h
+	<windows.h>
+
+1479896544 c:\users\mozgg\desktop\com_technology\server\components.h
+	<windows.h>
+
+1480599525 source:c:\users\mozgg\desktop\com_technology\server\components.cpp
+	"interfaces.h"
+	<stdio.h>
+	"Components.h"
+	<iostream>
+	"math.h"
+	<conio.h>
+
+1480599525 c:\users\mozgg\desktop\com_technology\server\interfaces.h
+	<windows.h>
+
