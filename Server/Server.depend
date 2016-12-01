@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1480492828 source:c:\users\mozgg\downloads\2\2\server\components.cpp
+	"interfaces.h"
+	<stdio.h>
+	"Components.h"
+
+1480493895 c:\users\mozgg\downloads\2\2\server\interfaces.h
+	<windows.h>
+
+1479896544 c:\users\mozgg\downloads\2\2\server\components.h
+	<windows.h>
+
+1479905966 source:c:\users\mozgg\downloads\2\2\server\main.cpp
+	"main.h"
+	<stdio.h>
+	"Components.h"
+
+1479905710 c:\users\mozgg\downloads\2\2\server\main.h
+	<windows.h>
+

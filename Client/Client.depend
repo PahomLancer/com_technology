@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1479913708 source:c:\users\ИвановКС\desktop\!\univer\client\main.cpp
+	<objbase.h>
+	<stdio.h>
+	"Interfaces.h"
+
+1479884213 c:\users\ИвановКС\desktop\!\univer\client\interfaces.h
+	<windows.h>
+
+1480490525 source:c:\users\mozgg\downloads\2\2\client\main.cpp
+	<objbase.h>
+	<stdio.h>
+	"Interfaces.h"
+
+1479880614 c:\users\mozgg\downloads\2\2\client\interfaces.h
+	<windows.h>
+

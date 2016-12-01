@@ -1,0 +1,2 @@
+1. Для отмены декорации (создания псевдонимов): Other linker options: -Wl,--kill-at
+2. Для регистрации в реестре необходима запись не в CLSID, а в HKEY_CLASSES_ROOR-Wow6432Node-CLSID для 64-разрядных ОС.
